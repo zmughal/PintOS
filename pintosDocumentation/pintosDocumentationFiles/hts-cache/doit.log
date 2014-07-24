@@ -1,0 +1,8 @@
+http://web.stanford.edu/class/cs140/projects/pintos/pintos.html -O "/home/chirag/pintos/pintosDocumentation/pintosDocumentationFiles" -Y -%v
+File generated automatically on Thu, 14 Aug 2014 12:01:47, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

@@ -1,0 +1,26 @@
+HTTrack3.48-1+libhtsjava.so.2 launched on Thu, 14 Aug 2014 12:01:47 at http://web.stanford.edu/class/cs140/projects/pintos/pintos.html
+(winhttrack http://web.stanford.edu/class/cs140/projects/pintos/pintos.html -O "/home/chirag/pintos/pintosDocumentation/pintosDocumentationFiles" -Y -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:01:48	Warning: 	Note: due to web.stanford.edu remote robots.txt rules, links beginning with these path will be forbidden: /~folutade/ATI/, /dept/soc/people/rsandefur/ (see in the options to disable this)
+12:04:08	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/developer.intel.com (from web.stanford.edu/class/cs140/projects/pintos/pintos_13.html)
+12:06:32	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/partitions/partition_tables.html (from web.stanford.edu/class/cs140/projects/pintos/pintos_13.html)
+12:06:43	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/svga/svga.htm (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/home.htm)
+12:06:43	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/tricks/tricks.htm (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/home.htm)
+12:07:58	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/SVGA (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/glossary.htm)
+12:07:58	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/VGA (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/glossary.htm)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/vga/vgaattr.htm (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/vga/vga.htm)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/laser.jpg (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-1.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/toshiba.jpg (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-1.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/laser-s.jpg (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-1.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/toshiba-s.jpg (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-1.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/ncr.jpg (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-2.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/kbd/sun-type5.gif (from web.stanford.edu/class/cs140/projects/pintos/specs/kbd/scancodes-6.html)
+12:08:02	Error: 	"Not Found" (404) at link web.stanford.edu/class/cs140/projects/pintos/specs/freevga/vga/Char.gif (from web.stanford.edu/class/cs140/projects/pintos/specs/freevga/vga/vgatext.htm)
+
+HTTrack Website Copier/3.48-1 mirror complete in 6 minutes 15 seconds : 161 links scanned, 145 files written (9410103 bytes overall) [9545508 bytes received at 25454 bytes/sec], 4.3 requests per connection
+(14 errors, 1 warnings, 0 messages)
