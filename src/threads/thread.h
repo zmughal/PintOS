@@ -120,6 +120,8 @@ void thread_block (void);
 void thread_unblock (struct thread *);
 
 struct thread *thread_current (void);
+struct thread *next_thread_to_run(void);
+bool is_thread(struct thread *) UNUSED;
 tid_t thread_tid (void);
 const char *thread_name (void);
 

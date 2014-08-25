@@ -91,9 +91,39 @@ timer_sleep (int64_t ticks)
 {
   int64_t start = timer_ticks ();
 
-  ASSERT (intr_get_level () == INTR_ON);
-  while (timer_elapsed (start) < ticks) 
-    thread_yield ();
+  int64_t current;
+
+  struct thread *runningThread = (struct thread*)(malloc(sizeof(struct thread)));
+  struct thread *nextThread = (struct thread*)(malloc(sizeof(struct thread)));
+  runningThread = thread_current();
+  nextThread = next_thread_to_run();
+  struct thread *prev = (struct thread*)(malloc(sizeof(struct thread)));
+
+  if(runningThread != nextThread){
+    enum intr_level prev_intr_lvl = intr_disable();
+    thread_block();
+
+    ASSERT (intr_get_level() == INTR_OFF);
+    ASSERT (runningThread->status != THREAD_RUNNING);
+    ASSERT (is_thread(nextThread))
+
+    prev = switch_threads(runningThread, nextThread);
+    thread_schedule_tail(prev);
+    current = timer_ticks() - start;
+    while(current < ticks)
+      current = timer_ticks() - start;
+    ASSERT (intr_get_level == INTR_OFF);
+    thread_unblock(runningThread);
+    prev = switch_threads(nextThread, runningThread);
+    thread_schedule_tail(prev);
+    prev_intr_lvl = intr_set_lvl(prev_intr_lvl);
+  }
+  else{
+    ASSERT (intr_get_level () == INTR_ON);
+    while (timer_ticks() - start < ticks)
+     thread_yield();
+  }
+
 }
 
 /* Sleeps for approximately MS milliseconds.  Interrupts must be
